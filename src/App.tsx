@@ -1,8 +1,11 @@
+import { Button } from './components/ui/button'
+import './global.css'
+
 export function App() {
 
   return (
-    <div>
-      teste
+    <div className='flex justify-center items-center h-screen'>
+      <Button>Button</Button>
     </div>
   )
 }
