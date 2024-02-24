@@ -36,7 +36,10 @@ export function OrderStatus({ status }: OrderStatusProps) {
   const statusConfig = orderStatusMap[status]
   return (
     <div className="flex items-center gap-2">
-      <span className={`h-2 w-2 rounded-full ${statusConfig.color}`} />
+      <span
+        data-testid="badge"
+        className={`h-2 w-2 rounded-full ${statusConfig.color}`}
+      />
       <span className="font-medium text-muted-foreground">
         {statusConfig.label}
       </span>
