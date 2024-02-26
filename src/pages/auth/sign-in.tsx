@@ -44,7 +44,7 @@ export function SignIn() {
         },
       })
     } catch {
-      toast.error('Ocorreu um erro ao acessar o painel')
+      toast.error('Credenciais inválidas.')
     }
   }
 
